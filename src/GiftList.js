@@ -8,7 +8,8 @@ class GiftList extends Component {
 
         this.state = {
             recepient: '',
-            gift: ''
+            gift: '',
+            getValues: false
         };
         this.getRecepient = this.getRecepient.bind(this);
         this.getGift = this.getGift.bind(this);
@@ -22,6 +23,10 @@ class GiftList extends Component {
         this.setState({gift: event.target.value});
     };
 
+    getdata() {
+        this.setState({getValues: true});
+    };
+
 
     render() {
         return (
@@ -31,10 +36,12 @@ class GiftList extends Component {
                        placeholder="name of the recepient"/>
                 <input type="text" className="data-gift-item" onChange={this.getGift}
                        placeholder="What's the gift"/>
-                <button disabled={!this.state.recepient || !this.state.gift} className="data-submit">Submit
+                <button disabled={!this.state.recepient || !this.state.gift} className="data-submit"
+                        onSubmit={this.getData}>Submit
                 </button>
-                <br/>
 
+                <div>{this.state.getValues ? '' : this.state.recepient | this.state.gift}
+                </div>
             </div>
         )
     }

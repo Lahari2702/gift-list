@@ -12,3 +12,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+button {
+  border: 1px solid #999999;
+  background-color: orange;
+  color: white;
+}
+
+button:hover {
+  border: 1px solid #999999;
+  background-color: orangered;
+  color: white;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7725a4c0-d591-48f6-9248-6af86fefc032" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GiftList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GiftList.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GiftList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GiftList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GiftList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GiftList.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GiftList.test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GiftList.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GiftList.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+            <state relative-caret-position="1815">
+              <caret line="121" column="52" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -34,11 +33,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GiftList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GiftList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="32" column="51" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="51" />
+            <state relative-caret-position="465">
+              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -55,8 +63,9 @@
         <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/src/App.test.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/GiftList.js" />
         <option value="$PROJECT_DIR$/src/GiftList.test.js" />
+        <option value="$PROJECT_DIR$/src/GiftList.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
       </list>
     </option>
   </component>
@@ -124,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.GiftList (1)">
+  <component name="RunManager" selected="Jest.GiftList.App on page load.test if the submit button is disabled">
     <configuration name="GiftList (1)" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -145,6 +154,19 @@
       <test-file value="$PROJECT_DIR$/src/App.test.js" />
       <test-names>
         <test-name value="GiftList" />
+      </test-names>
+    </configuration>
+    <configuration name="GiftList.App on page load.test if the submit button is disabled" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/GiftList.test.js" />
+      <test-names>
+        <test-name value="GiftList" />
+        <test-name value="App on page load" />
+        <test-name value="test if the submit button is disabled" />
       </test-names>
     </configuration>
     <configuration name="GiftList.App on page load.test the first input Placeholder" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
@@ -173,32 +195,20 @@
         <test-name value="test the second input Placeholder" />
       </test-names>
     </configuration>
-    <configuration name="GiftList.test if the second input is valid" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/App.test.js" />
-      <test-names>
-        <test-name value="GiftList" />
-        <test-name value="test if the second input is valid" />
-      </test-names>
-    </configuration>
     <list>
-      <item itemvalue="Jest.GiftList.test if the second input is valid" />
       <item itemvalue="Jest.GiftList" />
       <item itemvalue="Jest.GiftList (1)" />
       <item itemvalue="Jest.GiftList.App on page load.test the first input Placeholder" />
       <item itemvalue="Jest.GiftList.App on page load.test the second input Placeholder" />
+      <item itemvalue="Jest.GiftList.App on page load.test if the submit button is disabled" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.GiftList.App on page load.test if the submit button is disabled" />
         <item itemvalue="Jest.GiftList (1)" />
         <item itemvalue="Jest.GiftList.App on page load.test the first input Placeholder" />
         <item itemvalue="Jest.GiftList.App on page load.test the second input Placeholder" />
         <item itemvalue="Jest.GiftList" />
-        <item itemvalue="Jest.GiftList.test if the second input is valid" />
       </list>
     </recent_temporary>
   </component>
@@ -212,26 +222,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554831011632</updated>
-      <workItem from="1554831013221" duration="6933000" />
+      <workItem from="1554831013221" duration="8878000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GiftList_(1) - 2019.04.09 at 15h 18m 27s.xml">
-      <configuration name="GiftList (1)" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="GiftList_App_on_page_load_test_the_first_input_Placeholder - 2019.04.09 at 15h 23m 04s.xml">
-      <configuration name="GiftList.App on page load.test the first input Placeholder" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="GiftList_App_on_page_load_test_the_first_input_Placeholder - 2019.04.09 at 15h 23m 18s.xml">
-      <configuration name="GiftList.App on page load.test the first input Placeholder" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="GiftList_App_on_page_load_test_the_first_input_Placeholder - 2019.04.09 at 15h 23m 27s.xml">
-      <configuration name="GiftList.App on page load.test the first input Placeholder" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="GiftList_App_on_page_load_test_the_second_input_Placeholder - 2019.04.09 at 15h 23m 59s.xml">
-      <configuration name="GiftList.App on page load.test the second input Placeholder" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="GiftList_(1) - 2019.04.09 at 15h 24m 05s.xml">
       <configuration name="GiftList (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -247,9 +242,24 @@
     <history-entry file="GiftList_(1) - 2019.04.09 at 15h 26m 53s.xml">
       <configuration name="GiftList (1)" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="GiftList_(1) - 2019.04.09 at 15h 35m 34s.xml">
+      <configuration name="GiftList (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="GiftList_(1) - 2019.04.09 at 15h 37m 33s.xml">
+      <configuration name="GiftList (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="GiftList_App_on_page_load_test_if_the_submit_button_is_disabled - 2019.04.09 at 15h 44m 16s.xml">
+      <configuration name="GiftList.App on page load.test if the submit button is disabled" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="GiftList_App_on_page_load_test_if_the_submit_button_is_disabled - 2019.04.09 at 15h 44m 28s.xml">
+      <configuration name="GiftList.App on page load.test if the submit button is disabled" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="GiftList_App_on_page_load_test_if_the_submit_button_is_disabled - 2019.04.09 at 15h 44m 38s.xml">
+      <configuration name="GiftList.App on page load.test if the submit button is disabled" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6933000" />
+    <option name="totallyTimeSpent" value="8878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
@@ -259,11 +269,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3070588" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3070588" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -280,6 +290,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.js">
@@ -331,20 +346,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GiftList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="32" column="51" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GiftList.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+        <state relative-caret-position="1815">
+          <caret line="121" column="52" selection-start-line="121" selection-start-column="52" selection-end-line="121" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GiftList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>

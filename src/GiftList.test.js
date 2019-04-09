@@ -17,11 +17,13 @@ describe('GiftList', function () {
         it('test the Label of the App', () => {
             const input = wrapper.find("[data-title]");
             expect(input).toHaveLength(1);
+            expect(input.exists()).toEqual(true);
         });
 
         it('test the first input for gift recepient', () => {
             const input = wrapper.find(".data-gift-recepient");
             expect(input).toHaveLength(1);
+            expect(input.exists()).toEqual(true);
         });
         it('test the first input Placeholder', () => {
             const input = wrapper.find(".data-gift-recepient");
@@ -31,6 +33,7 @@ describe('GiftList', function () {
         it('test the second input for gift item', () => {
             const input = wrapper.find(".data-gift-item");
             expect(input).toHaveLength(1);
+            expect(input.exists()).toEqual(true);
         });
         it('test the second input Placeholder', () => {
             const input = wrapper.find(".data-gift-item");
@@ -40,9 +43,17 @@ describe('GiftList', function () {
         it('test if submit button exists', () => {
             const submit = wrapper.find("button");
             expect(submit.exists()).toEqual(true);
+
+        });
+
+        it('test if the submit button is disabled', () => {
+            const submit = wrapper.find("button");
+            expect(submit.props().disabled).toEqual(true);
+
         });
     });
-    describe('Validate Data', () => {
+
+    describe('Bad Data', () => {
 
         it('test if the first input is valid', () => {
             const recepInput = wrapper.find(".data-gift-recepient");
@@ -84,27 +95,6 @@ describe('GiftList', function () {
             submitButton.simulate('click');
             expect(submitButton.props().disabled).toEqual(true);
         });
-
-
-        it('test if the both input are valid', () => {
-            const recepInput = wrapper.find(".data-gift-recepient");
-            const itemInput = wrapper.find(".data-gift-item");
-            const giftRecepientEvent = {
-                target: {
-                    value: "Lahari"
-                }
-            };
-            const giftItemEvent = {
-                target: {
-                    value: "Sravan"
-                }
-            };
-            recepInput.simulate('change', giftRecepientEvent);
-            itemInput.simulate('change', giftItemEvent);
-            const submitButton = wrapper.find(".data-submit");
-            submitButton.simulate('click');
-            expect(submitButton.props().disabled).toEqual(false);
-        });
         it('test if the both input are invalid', () => {
             const recepInput = wrapper.find(".data-gift-recepient");
             const itemInput = wrapper.find(".data-gift-item");
@@ -123,6 +113,31 @@ describe('GiftList', function () {
             const submitButton = wrapper.find(".data-submit");
             submitButton.simulate('click');
             expect(submitButton.props().disabled).toEqual(true);
+        });
+
+        describe('Good Data', () => {
+
+
+            it('test if the both input are valid', () => {
+                const recepInput = wrapper.find(".data-gift-recepient");
+                const itemInput = wrapper.find(".data-gift-item");
+                const giftRecepientEvent = {
+                    target: {
+                        value: "Lahari"
+                    }
+                };
+                const giftItemEvent = {
+                    target: {
+                        value: "Sravan"
+                    }
+                };
+                recepInput.simulate('change', giftRecepientEvent);
+                itemInput.simulate('change', giftItemEvent);
+                const submitButton = wrapper.find(".data-submit");
+                submitButton.simulate('click');
+                expect(submitButton.props().disabled).toEqual(false);
+            });
+
         });
     });
 
