@@ -1,6 +1,5 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import App from './App';
 import GiftList from "./GiftList";
 
 
@@ -114,29 +113,28 @@ describe('GiftList', function () {
             submitButton.simulate('click');
             expect(submitButton.props().disabled).toEqual(true);
         });
+    });
+    describe('Good Data', () => {
 
-        describe('Good Data', () => {
 
-
-            it('test if the both input are valid', () => {
-                const recepInput = wrapper.find(".data-gift-recepient");
-                const itemInput = wrapper.find(".data-gift-item");
-                const giftRecepientEvent = {
-                    target: {
-                        value: "Lahari"
-                    }
-                };
-                const giftItemEvent = {
-                    target: {
-                        value: "Sravan"
-                    }
-                };
-                recepInput.simulate('change', giftRecepientEvent);
-                itemInput.simulate('change', giftItemEvent);
-                const submitButton = wrapper.find(".data-submit");
-                submitButton.simulate('click');
-                expect(submitButton.props().disabled).toEqual(false);
-            });
+        it('test if the both input are valid', () => {
+            const recepInput = wrapper.find(".data-gift-recepient");
+            const itemInput = wrapper.find(".data-gift-item");
+            const giftRecepientEvent = {
+                target: {
+                    value: "Lahari"
+                }
+            };
+            const giftItemEvent = {
+                target: {
+                    value: "Sravan"
+                }
+            };
+            recepInput.simulate('change', giftRecepientEvent);
+            itemInput.simulate('change', giftItemEvent);
+            const submitButton = wrapper.find(".data-submit");
+            submitButton.simulate('click');
+            expect(submitButton.props().disabled).toEqual(false);
 
         });
     });

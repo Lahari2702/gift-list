@@ -9,26 +9,44 @@ class GiftList extends Component {
         this.state = {
             recepient: '',
             gift: '',
-            getValues: false
+            giftLists: [
+                {
+                    recepient: '',
+                    gift: ''
+                }
+            ]
+
         };
         this.getRecepient = this.getRecepient.bind(this);
         this.getGift = this.getGift.bind(this);
+        this.callClick = this.callClick.bind(this);
     }
 
-    getRecepient = (event) => {
+    getRecepient(event) {
         this.setState({recepient: event.target.value});
     };
 
-    getGift = (event) => {
+    getGift(event) {
         this.setState({gift: event.target.value});
     };
 
-    getdata() {
-        this.setState({getValues: true});
+    callClick = () => {
+        const gifts = {};
+        gifts["recepient"] = this.state.recepient;
+        gifts["gift"] = this.state.gift;
+        const giftLists = this.state.giftLists;
+        giftLists.push(gifts);
+        this.setState({giftLists});
     };
 
 
     render() {
+        const giftList = this.state.giftLists.map(gift => {
+            if (gift.recepient !== '' && gift.gift !== '') {
+                return (<li key={gift.gift}>{gift.recepient} | {gift.gift}</li>)
+            }
+        });
+
         return (
             <div>
                 <h1 data-title>Gift Giver</h1>
@@ -37,10 +55,10 @@ class GiftList extends Component {
                 <input type="text" className="data-gift-item" onChange={this.getGift}
                        placeholder="What's the gift"/>
                 <button disabled={!this.state.recepient || !this.state.gift} className="data-submit"
-                        onSubmit={this.getData}>Submit
+                        onClick={this.callClick}>Submit
                 </button>
-
-                <div>{this.state.getValues ? '' : this.state.recepient | this.state.gift}
+                <div>
+                    {giftList}
                 </div>
             </div>
         )
